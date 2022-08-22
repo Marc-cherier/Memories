@@ -1,0 +1,112 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('../images/table.jpg');
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    justify-content: center;
+    margin: 0 auto 50px auto;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 67%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.rules {
+    color: black;
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.rules p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+.card {
+    display: flex;
+    width: 100px;
+    height: 161px;
+    background-image: url('../images/cardBack.jpg');
+    border-radius: .5rem;
+    margin: .5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+}
+
+.--selected {
+    -webkit-transform: rotatey(180deg);
+    transform: rotatey(180deg);
+    color: white;
+}
+
+.--selected img {
+    -webkit-transform: rotatey(180deg);
+    transform: rotatey(180deg);
+    opacity: 1;
+    background: rgb(0, 1, 36);
+    background: linear-gradient(4deg, rgba(0, 1, 36, 1) 0%, rgba(217, 217, 217, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+.counter {
+    display: block;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+img {
+    position: relative;
+    border-radius: .5rem;
+    width: 100px;
+    height: 161px;
+    opacity: 0;
+}
+
+.start {
+    position: relative;
+    background-color: rgb(28, 184, 28);
+    display: flex;
+    justify-content: center;
+    padding: .8rem;
+    border-radius: .3rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
